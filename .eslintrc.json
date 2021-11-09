@@ -1,0 +1,23 @@
+{
+    "root": true,
+    "extends": "@react-native-community",
+    "plugins": ["sort-imports-es6-autofix"],
+    "rules": {
+        "prettier/prettier": [
+            "error",
+            {
+                "printWidth": 100,
+                "tabWidth": 4
+            }
+        ],
+        "sort-imports-es6-autofix/sort-imports-es6": [
+            2,
+            {
+                "ignoreCase": false,
+                "ignoreMemberSort": false,
+                "memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
+            }
+        ],
+        "no-console": "error"
+    }
+}
