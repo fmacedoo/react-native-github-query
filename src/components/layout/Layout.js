@@ -1,16 +1,18 @@
+import { StatusBar } from 'react-native';
 import { node } from 'prop-types';
-import { SafeAreaView, StatusBar } from 'react-native';
 import React from 'react';
+
+import { StyledSafeAreaView } from './styles';
 
 export default function Layout({ children }) {
     return (
-        <SafeAreaView>
+        <StyledSafeAreaView>
             <StatusBar />
             {children}
-        </SafeAreaView>
-    )
+        </StyledSafeAreaView>
+    );
 }
 
 Layout.propTypes = {
     children: node,
-}
+};
