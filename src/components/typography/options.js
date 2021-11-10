@@ -1,7 +1,14 @@
 export const COLORS = {
-    primary: '#22272e',
-    secondary: '#adbac7',
-    white: '#fff',
+    primary: pallete => pallete.primary,
+    secondary: pallete => pallete.secondary,
+    background: pallete => pallete.background,
+    foreground: pallete => pallete.foreground,
+    grey: pallete => pallete.grey,
+    white: pallete => pallete.white,
+    info: pallete => pallete.info,
+    success: pallete => pallete.success,
+    danger: pallete => pallete.danger,
+    warning: pallete => pallete.warning,
 };
 
 export const ALIGN = {
