@@ -3,8 +3,8 @@ import styled, { css } from 'styled-components';
 
 import { ALIGN, COLORS, TRANSFORMS } from './options';
 
-const propsBasedStyle = ({ color, align, transform, underline }) => css`
-    color: ${color && COLORS[color]};
+const propsBasedStyle = ({ color, align, transform, theme, underline }) => css`
+    color: ${color && COLORS[color](theme.palette)};
 
     text-align: ${ALIGN[align]};
     text-decoration: ${underline && 'underline'};
