@@ -58,6 +58,7 @@ Git commits will trigger a git hook that run jest, eslint and stylelint. To avoi
 ### Application
 - As an active user (the user who adds the personal token access), it's possible to see the private repositories. Must be better to omit them.
 - A not trimmed username string on the search screen, may cause a user not found error.
+- A light github theme may be welcome.
 
 ### Tests
 - Typography deserves more tests for each variant it delivers.
@@ -67,3 +68,5 @@ Git commits will trigger a git hook that run jest, eslint and stylelint. To avoi
 ## Pull Requests / Project progress
 
 Check the [Closed PRs](https://github.com/fmacedoo/loadsmart-mobile-test/pulls?q=is%3Apr+is%3Aclosed) to have an idea on how the project was built.
+
+### 😊 Feel free to comment or open issues
