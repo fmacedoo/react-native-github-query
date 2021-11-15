@@ -27,6 +27,7 @@ At the root folder, run:
 > yarn ios
 
 ### Android
+⚠️ `Check Possible Improvements section about android!`
 > yarn android
 
 This will start the metro process, and the simulator by default.
@@ -61,3 +62,8 @@ Git commits will trigger a git hook that run jest, eslint and stylelint. To avoi
 ### Tests
 - Typography deserves more tests for each variant it delivers.
 - Styled-components styles have being tested on a `try hard` method. Jest-styled-components lib are presenting bugs on its use with the project.
+- `ANDROID` wasn't tested. I've tried to do my best here, but the time was gone.
+
+## Pull Requests / Project progress
+
+Check the [Closed PRs](https://github.com/fmacedoo/loadsmart-mobile-test/pulls?q=is%3Apr+is%3Aclosed) to have an idea on how the project was built.
