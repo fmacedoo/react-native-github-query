@@ -1,14 +1,21 @@
 import { Text } from 'react-native';
-import styled, { css } from 'styled-components';
+import styled, { css } from 'styled-components/native';
 
 import { ALIGN, COLORS, TRANSFORMS } from './options';
 
+const themeOrColor = (value, theme) => (COLORS[value] ? COLORS[value](theme.palette) : value);
+
 const propsBasedStyle = ({ color, align, transform, theme, underline }) => css`
-    color: ${color && COLORS[color](theme.palette)};
+    color: ${color && themeOrColor(color, theme)};
 
     text-align: ${ALIGN[align]};
     text-decoration: ${underline && 'underline'};
     text-transform: ${TRANSFORMS[transform]};
+`;
+
+export const bodyStyle = () => css`
+    font-size: 15px;
+    font-family: 'Roboto-Regular';
 `;
 
 const fontStyle = bold => css`
@@ -26,8 +33,9 @@ export const displayLarge = styled(Text)`
 export const display = styled(Text)`
     font-size: 20px;
     font-family: 'Roboto-Regular';
-    line-height: 67px;
+    line-height: 32px;
 
+    ${({ bold }) => fontStyle(bold)}
     ${props => propsBasedStyle(props)}
 `;
 
@@ -36,6 +44,7 @@ export const heading = styled(Text)`
     font-family: 'Roboto-Regular';
     line-height: 20px;
 
+    ${({ bold }) => fontStyle(bold)}
     ${props => propsBasedStyle(props)}
 `;
 
@@ -47,11 +56,8 @@ export const kicker = styled(Text)`
 `;
 
 export const body = styled(Text)`
-    font-size: 15px;
-    font-family: 'Roboto-Regular';
-
+    ${props => bodyStyle(props)}
     ${({ bold }) => fontStyle(bold)}
-
     ${props => propsBasedStyle(props)}
 `;
 
