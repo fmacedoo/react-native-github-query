@@ -4,6 +4,7 @@ export const COLORS = {
     background: pallete => pallete.background,
     foreground: pallete => pallete.foreground,
     grey: pallete => pallete.grey,
+    highlight: pallete => pallete.highlight,
     white: pallete => pallete.white,
     info: pallete => pallete.info,
     success: pallete => pallete.success,

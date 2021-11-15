@@ -1,10 +1,19 @@
 import { bool, node, oneOf, string } from 'prop-types';
 import React from 'react';
 
-import { ALIGN, COLORS, TRANSFORMS } from './options';
+import { ALIGN, TRANSFORMS } from './options';
 import VARIANTS from './variants';
 
-export default function Typography({ text, variant, color, align, transform, underline, bold }) {
+export default function Typography({
+    text = '',
+    variant = 'body',
+    color = 'primary',
+    align = 'left',
+    transform = 'none',
+    underline,
+    bold,
+    dataTest = '',
+}) {
     const StyledComponent = VARIANTS[variant];
     if (!StyledComponent) {
         throw new Error(`Typography: Invalid variant "${variant}".`);
@@ -16,6 +25,7 @@ export default function Typography({ text, variant, color, align, transform, und
         transform,
         underline,
         bold,
+        testID: `${dataTest}Typography`,
     };
 
     return <StyledComponent {...props}>{text}</StyledComponent>;
@@ -24,18 +34,11 @@ export default function Typography({ text, variant, color, align, transform, und
 Typography.propTypes = {
     text: string,
     variant: oneOf(Object.keys(VARIANTS)),
-    color: oneOf(Object.keys(COLORS)),
+    color: string,
     align: oneOf(Object.keys(ALIGN)),
     transform: oneOf(Object.keys(TRANSFORMS)),
     underline: bool,
     bold: bool,
+    dataTest: string,
     children: node,
-};
-
-Typography.defaultProps = {
-    text: '',
-    color: 'primary',
-    variant: 'body',
-    align: 'left',
-    transform: 'none',
 };
