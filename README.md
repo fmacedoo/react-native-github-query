@@ -60,7 +60,7 @@ Git commits will trigger a git hook that run jest, eslint and stylelint. To avoi
 - A not trimmed username string on the search screen, may cause a user not found error.
 - A light github theme may be welcome.
 - Font scaling is also missed on that project.
-- Some typos like pallete.js file name, and any other.
+- Some typos like pallete.js file name, `spacers` to be renamed to `sizes`.
 
 ### Tests
 - Typography deserves more tests for each variant it delivers.
