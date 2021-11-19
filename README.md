@@ -59,6 +59,8 @@ Git commits will trigger a git hook that run jest, eslint and stylelint. To avoi
 - As an active user (the user who adds the personal token access), it's possible to see the private repositories. Must be better to omit them.
 - A not trimmed username string on the search screen, may cause a user not found error.
 - A light github theme may be welcome.
+- Font scaling is also missed on that project.
+- Some typos like pallete.js file name, and any other.
 
 ### Tests
 - Typography deserves more tests for each variant it delivers.
