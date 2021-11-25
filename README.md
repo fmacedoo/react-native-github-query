@@ -24,8 +24,10 @@ Go to the project root folder and head to  **src/Presentation.Api**  subfolder a
 At the root folder, run:
 
 ### iOS
+```
 > cd ios && pod install && cd ..
 > yarn ios
+```
 
 ### Android
 ⚠️ `Check Possible Improvements section about android!`
