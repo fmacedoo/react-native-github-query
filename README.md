@@ -1,7 +1,7 @@
-# Loadsmart Mobile Test
-A mobile app to query a GitHub user information.
+# React Native Query Github
+A mobile app that queries a GitHub user information.
 
-[![Test](https://github.com/fmacedoo/loadsmart-mobile-test/actions/workflows/node.js.yml/badge.svg)](https://github.com/fmacedoo/loadsmart-mobile-test/actions/workflows/node.js.yml)
+[![Test](https://github.com/fmacedoo/react-native-github-query/actions/workflows/node.js.yml/badge.svg)](https://github.com/fmacedoo/react-native-github-query/actions/workflows/node.js.yml)
 ​
 ## Libs
 - React Native
@@ -69,6 +69,6 @@ Git commits will trigger a git hook that run jest, eslint and stylelint. To avoi
 
 ## Pull Requests / Project progress
 
-Check the [Closed PRs](https://github.com/fmacedoo/loadsmart-mobile-test/pulls?q=is%3Apr+is%3Aclosed) to have an idea on how the project was built.
+Check the [Closed PRs](https://github.com/fmacedoo/react-native-github-query/pulls?q=is%3Apr+is%3Aclosed) to have an idea on how the project was built.
 
 ### 😊 Feel free to comment or open issues
