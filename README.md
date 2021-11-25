@@ -1,5 +1,12 @@
 # React Native Query Github
-A mobile app that queries a GitHub user information.
+A mobile app that queries a GitHub user information. It may be used as a basic project scaffold as it includes:
+
+- A theme based color palette, using styled-compoenents.
+- A typography component to assure consistence on texts through the app.
+- Folder structure architecture.
+- Jest with React-Native-Testing-Library configured.
+- ESLint & Stylelint configured (with styled-components).
+- A basic react-navigation.
 
 [![Test](https://github.com/fmacedoo/react-native-github-query/actions/workflows/node.js.yml/badge.svg)](https://github.com/fmacedoo/react-native-github-query/actions/workflows/node.js.yml)
 ​
